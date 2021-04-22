@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { XyzComponent } from './login/xyz.component';
+import { MyUpperCasePipe } from './my-upper-case.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    XyzComponent
+    XyzComponent,
+    MyUpperCasePipe
   ],
   imports: [
     BrowserModule,
