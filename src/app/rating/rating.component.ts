@@ -8,10 +8,13 @@ import { Component, Input, OnInit } from '@angular/core';
 export class RatingComponent implements OnInit {
 
   @Input() targetScore = 0;
+  starWidth = 0;
 
   constructor() { }
 
   ngOnInit(): void {
+      console.log('ngOnInit');
+      this.starWidth = this.targetScore * 75 / 5;
   }
 
 }
