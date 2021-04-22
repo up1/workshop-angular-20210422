@@ -7,13 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   name = 'somkiat';
-  result = "...";
-  data = ""
-  username = ""
+  result = '...';
+  username = '';
+  tasks = ['Task 1', 'Task 2'];
 
   doSth() {
-    console.log("Clicked ...");
-    this.result = "Change from clicked !!";
+    console.log('Clicked ...');
+    this.result = 'Change from clicked !!';
   }
 
   onPress(event: any) {
